@@ -1,0 +1,114 @@
+@import "reset.css";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:wght@700&display=swap");
+:root {
+  font-size: 14px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: hsl(30, 38%, 92%);
+  height: 100vh;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex--column {
+  flex-direction: column;
+}
+
+h1,
+h2 {
+  font-family: "Fraunces", "Times New Roman", sans-serif;
+  font-size: 2rem;
+}
+
+p {
+  font-family: "Montserrat", "Arial", sans-serif;
+  color: hsl(228, 12%, 48%);
+  line-height: 1.5rem;
+}
+
+.wrapper {
+  padding: 1.5rem;
+  align-items: start;
+  gap: 1rem;
+}
+
+.card {
+  background-color: #ffffff;
+  width: clamp(20rem, 90%, 40rem);
+  border-radius: 1rem;
+  overflow: hidden;
+  transition: all 1s;
+}
+
+.illustration {
+  min-height: 250px;
+  background-image: url("./images/image-product-mobile.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.card_index {
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+}
+
+.card_price {
+  gap: 1rem;
+}
+
+.card_price h2 {
+  color: hsl(158, 36%, 37%);
+}
+
+.card_price p {
+  text-decoration: line-through;
+}
+
+.card_button {
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-weight: 700;
+  text-align: center;
+  width: 100%;
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(158, 36%, 37%);
+  gap: 1rem;
+  padding: 1rem;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.card_button:hover {
+  background-color: hsl(158, 63%, 15%);
+}
+
+@media (min-width: 480px) {
+  .card {
+    width: 80%;
+  }
+}
+@media (min-width: 550px) {
+  .card {
+    width: clamp(20rem, 90%, 40rem);
+    display: flex;
+    flex-direction: row;
+  }
+  .illustration {
+    min-height: 250px;
+    background-image: url("./images/image-product-desktop.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-width: 50%;
+  }
+}/*# sourceMappingURL=style.css.map */
